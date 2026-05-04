@@ -1,7 +1,11 @@
-input_data = {"a": 1,"b": {"c": 2,"d": {"e": 3}},"f": {"g": [4, 5, {"h": 6}]},
-    "i": [7, 8]}
-k = {"a": 1, "b.c": 2,"b.d.e": 3, "f.g[0]": 4,"f.g[1]": 5,"f.g[2].h": 6,"i[0]": 7,
-  "i[1]": 8}
+input_data = {"a": 1,"b": {"c": 2,"d": {"e": 3}},"f": {"g": [4, 5, {"h": 6}]},"i": [7, 8]}
+
+k = {"a": 1, "b.c": 2,"b.d.e": 3, "f.g[0]": 4,"f.g[1]": 5,"f.g[2].h": 6,"i[0]": 7,"i[1]": 8}
+
+
+
+
+
 
 
 # def abc(data,prefix=None):
@@ -70,17 +74,22 @@ k = {"a": 1, "b.c": 2,"b.d.e": 3, "f.g[0]": 4,"f.g[1]": 5,"f.g[2].h": 6,"i[0]": 
 #     p2.start()
 
 
-intervals = [[1,3],[2,6],[8,10],[15,18]]
-result = []
-for i in range(len(intervals)):
-    if not result:
-        result.append(intervals[i])
-        continue
-    # print(result)
-    # print(f"{i}==={i-1}")
-    elif result[-1][1] > intervals[i][0]:
-        result[i-1][1] = intervals[i][1]
-    else:
-        result.append(intervals[i])
+# intervals = [[1,3],[2,6],[8,10],[15,18]]
+# result = []
+# for i in range(len(intervals)):
+#     if not result:
+#         result.append(intervals[i])
+#         continue
+#     # print(result)
+#     # print(f"{i}==={i-1}")
+#     elif result[-1][1] > intervals[i][0]:
+#         result[i-1][1] = intervals[i][1]
+#     else:
+#         result.append(intervals[i])
         # return result
+
+import requests
+import json
+res = requests.get(url = "https://leetcode.com/problems/insert-interval/")
+print(res.json())
         

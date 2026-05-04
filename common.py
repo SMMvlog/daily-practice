@@ -1,7 +1,9 @@
-# Input: test_dict = {‘Manjeet’: [1], ‘Akash’: [1, 8, 9]} 
+test_dict = {'Manjeet': [1], 'Akash': [1, 8, 9]} 
 # Output: {‘Manjeet’: [], ‘Akash’: [8, 9]} 
 # Input: test_dict = {‘Manjeet’: [2, 2, 2], ‘Akash’: [2, 2, 2]} 
 # Output: {‘Manjeet’: [], ‘Akash’: []}
+
+
 
 
 # test_dict = {"Manjeet": [1], "Akash": [1, 8, 9]}
