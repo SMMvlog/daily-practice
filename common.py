@@ -17,7 +17,7 @@ test_dict = {'Manjeet': [1], 'Akash': [1, 8, 9]}
 # print(a)
 
 # test_dict = {"Manjeet": [1], "Akash": [1, 8, 9]}
-test_dict = {"Manjeet": [2, 2, 2], "Akash": [2, 2, 2]}
+test_dict = {"Manjeet": [2, 2, 3], "Akash": [2, 2, 2]}
 
 common_values = set(test_dict["Manjeet"]).intersection(set(test_dict["Akash"]))
 print(common_values)

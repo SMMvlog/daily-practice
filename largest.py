@@ -1,5 +1,5 @@
 lst = [4,5,8,10,2,20,1,30,80,15]
-k = 3
+k = 4
 
 def get_third_largest(lst,k):
     count = 0

@@ -4,9 +4,14 @@ List_Value = [12, 33, 10, 20, 25]
 Given_value = 21
 # # Output: [12, 10, 20]
 
+print([x for x in List_Value if x<Given_value])
 
-result=list(filter(lambda x:x<=Given_value,List_Value))
-print(result)
+# print(list(filter(lambda x:x<=Given_value,List_Value)))
+
+
+
+# result=list(filter(lambda x:x<=Given_value,List_Value))
+# print(result)
 
 # result = lambda lst :[i for i in lst if i < 21]
 # print(result(List_Value))

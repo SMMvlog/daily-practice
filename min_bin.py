@@ -1,4 +1,5 @@
-# lst = [4, 5, 6, 7, 0, 1, 2]
+lst = [4, 5, 6, 7, 0, 1, 2]
+lst.remove()
 
 def find_min(nums):
     left, right = 0, len(nums) - 1

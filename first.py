@@ -92,26 +92,42 @@
 # find count of each  fruit
 l = ['apple', 'mango', ['apple', 'mango', 'banana', ['orange', 'grapes', ['apple', 'grapes']]]]
 
-fruit_dict = {}
-for i in l:
-    if isinstance(i,list):
-        l.extend(i)
-    else:
-        if i in fruit_dict:
-           fruit_dict[i]+=1
+
+def flat_list(l):
+    result = []
+    for i in l:
+        if isinstance(i,list):
+                result.extend(flat_list(i))
+
         else:
-            fruit_dict[i]=1
-print(fruit_dict)
+            result.append(i)
+    return result
+
+print(flat_list(l))
 
 
-# l = ['apple', 'mango','apple']
+
+
+# fruit_dict = {}
 # for i in l:
-#     if i in fruit_dict:
-#        fruit_dict[i]+=1
+#     if isinstance(i,list):
+#         l.extend(i)
 #     else:
-#         fruit_dict[i]=1
+#         if i in fruit_dict:
+#            fruit_dict[i]+=1
+#         else:
+#             fruit_dict[i]=1
 # print(fruit_dict)
 
-s = "Mehboob"
-a=s.split("o",s[:-2])
-print(a)
+
+# # l = ['apple', 'mango','apple']
+# # for i in l:
+# #     if i in fruit_dict:
+# #        fruit_dict[i]+=1
+# #     else:
+# #         fruit_dict[i]=1
+# # print(fruit_dict)
+
+# s = "Mehboob"
+# a=s.split("o",s[:-2])
+# print(a)

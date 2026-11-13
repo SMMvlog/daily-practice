@@ -63,3 +63,9 @@ for i in range(2,101):
 
 
 
+# lst = [4,8,9,10,3,12,7]
+
+# target = 11
+
+result = [0,6]
+

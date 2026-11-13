@@ -7,31 +7,58 @@ dct ={
 
 }
 
+df = pd.DataFrame(dct)
+print(df.groupby("Department")["Salary"].mean())
 
-df = pd.DataFrame(dct,nan_values="")
-df["updated_salary"] = df["Salary"] * 0.90
 
-df = df.fillna("Engineering")
-print(df)
-# # df =df.iloc[df[""]
-# ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# df = pd.DataFrame(dct,nan_values="")
+# df["updated_salary"] = df["Salary"] * 0.90
+
+# df = df.fillna("Engineering")
 # print(df)
-# df2 = pd.DataFrame({"Salary2":[f]})
-# modify table add column Salary2 value(Salary*1.10);
+# # # df =df.iloc[df[""]
+# # ]
 
-# max_sal = df.groupby("Department").max("Salary").reset_index()
-# print(df)
+# # print(df)
+# # df2 = pd.DataFrame({"Salary2":[f]})
+# # modify table add column Salary2 value(Salary*1.10);
 
-# max_salaries = df.groupby('Department')["Salary"].transform("min")
-# print(max_salaries)
-# # Filter rows where salary equals max salary per department
-# highest_paid = df[df['Salary'] == max_salaries]
+# # max_sal = df.groupby("Department").max("Salary").reset_index()
+# # print(df)
 
-# print(highest_paid)
+# # max_salaries = df.groupby('Department')["Salary"].transform("min")
+# # print(max_salaries)
+# # # Filter rows where salary equals max salary per department
+# # highest_paid = df[df['Salary'] == max_salaries]
+
+# # print(highest_paid)
 
 
 
 
-# select department,Max(salary) from table group by department;
+# # select department,Max(salary) from table group by department;
 
